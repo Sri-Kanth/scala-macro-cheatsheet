@@ -2,4 +2,4 @@
 personal dev notes for scala and macros
 
 1. macro errors : top-level class with companion can only expand into a block consisting in eponymous companions (this means there should be no other class being newly created along with the existing class)
-2. too many arguments for some constructor - macro project doesnt hav proper compiler settings (enable eperimental - option)
+2. too many arguments for some constructor - macro project doesnt hav proper compiler settings (enable -xeperimental - option and also add - language experimental in the compiler options, one of them helped)
